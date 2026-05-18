@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-icon">🔢</div>
+                <h1>Prime Number Test</h1>
+                <p class="subtitle">Check if a number is prime and see its divisors</p>
+            </div>
+
+            <!-- History -->
+            <div class="history-row" id="historyRow">
+                <span class="history-label">Recent:</span>
+            </div>
+
+            <!-- Input -->
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <input
+                        type="number"
+                        id="numberInput"
+                        placeholder="Enter an integer..."
+                        autocomplete="off"
+                        min="0"
+                        step="1"
+                    >
+                </div>
+                <button class="btn-check" id="checkBtn" title="Check">
+                    <span class="spinner"></span>
+                    <span class="btn-text">Check</span>
+                </button>
+            </div>
+            <div class="error-msg" id="errorMsg"></div>
+
+            <!-- Result -->
+            <div class="result-area" id="resultArea">
+                <!-- Status -->
+                <div id="statusBadge"></div>
+
+                <!-- Divisors -->
+                <div class="result-section" id="divisorsSection">
+                    <h3>📐 Divisors</h3>
+                    <div class="divisors-container" id="divisorsContainer"></div>
+                    <p style="font-size:0.8rem;color:#94a3b8;margin-top:6px;" id="divisorsCount"></p>
+                </div>
+
+                <!-- Prime factorization -->
+                <div class="result-section" id="factorizationSection">
+                    <h3>📊 Prime Factorization</h3>
+                    <div class="factorization-display" id="factorizationDisplay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
